@@ -1,4 +1,5 @@
 
+
 /* fonts */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
@@ -63,7 +64,7 @@ body{
 }
 
 .container{
-    max-width: 1300px;
+    max-width: 1170px;
     margin: auto;
     padding: 0 15px;
 }
@@ -93,34 +94,54 @@ a{
     text-decoration: none;
 }
 @media screen and (min-width:800px) {
-    body{
+    
+    body {
         font-size: 1rem;
     }
     h1{
         font-size: 3rem;
         line-height: 1;
     }
+    
 }
 nav{
-    background-color: #fff;
+    /* background-color: #fff;
     height: 3rem;
     display: grid;
-    align-items: center;
+    align-items: center; */
     box-shadow: var(--dark-shadow);
 }
 .navbar{
     width: 0vw;
     max-width: var(--fixed-width);
-    /* margin: 0 auto; */
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-.links{
+.nav-header {
     display: flex;
-    
-}
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+.nav-toggle {
+    font-size: 1.5rem;
+    color: var(--clr-primary-5);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    display: none;
+  }
+  .nav-toggle:hover {
+    color: var(--clr-primary-1);
+    transform: rotate(90deg);
+  }
+/* .links{
+    display: flex;   
+} */
 .links a {
     color: var(--clr-primary-4);
     font-size: 1rem;
@@ -135,6 +156,15 @@ nav{
     color: var(--clr-primary-5);
     padding-left: 1.5rem;
   }
+  .links {
+    height: 0;
+    /* overflow: hidden; */
+    transition: var(--transition);
+  }
+  .show-links {
+    height: 10rem;
+  }
+
 /* nav a{
     text-transform: capitalize;
     font-weight: 700;
@@ -191,18 +221,6 @@ nav a:hover {
   .btn-developer:hover{
     background: #8D0B1A;
     color: white;
-}
-.nav-toggle {
-    font-size: 1.5rem;
-    color: var(--clr-primary-5);
-    background: transparent;
-    border-color: transparent;
-    transition: var(--transition);
-    cursor: pointer;
-}
-.nav-toggle:hover {
-    color: var(--clr-primary-1);
-    transform: rotate(90deg);
 }
 
 /* contacts webpage */
@@ -304,4 +322,34 @@ main{
     top: -0.25rem;
     right: -0.5rem;
     border-radius: 50%;
+  }
+  @media screen  and (min-width: 800px) 
+  {
+      .navbar{
+          max-width: 1170px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+      }
+      .nav-header{
+          padding: 0;
+      }
+      .nav-toggle{
+          display: none;
+      }
+      .links{
+          height: auto;
+          display: flex;
+      }
+      .links a{
+          padding: 0;
+          margin: 0 0.5rem;
+      }
+      .links a :hover{
+          padding: 0;
+          background: transparent;
+      }
+       
   }
