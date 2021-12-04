@@ -124,7 +124,7 @@ nav{
   transition: var(--transition);
 }
 .show-links {
-  height: 10rem;
+  height: 13rem;
 }
 .container{
     max-width: 1300px;
