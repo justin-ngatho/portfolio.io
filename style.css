@@ -43,7 +43,7 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1200px;
-  --fixed-width: 620px;
+  --fixed-width: 700px;
 }
 ::after,
 ::before{
@@ -232,8 +232,8 @@ main{
 }
 .img-container{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     border-radius: 100%;
     margin: 0 auto;
     margin-bottom: 1rem;
