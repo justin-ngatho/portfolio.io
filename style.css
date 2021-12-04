@@ -145,7 +145,7 @@ nav{
   }
   .links {
     height: 0;
-    overflow: hidden;
+    overflow: visible;
     transition: var(--transition);
   }
   .show-links {
