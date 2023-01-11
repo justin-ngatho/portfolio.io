@@ -43,7 +43,7 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1200px;
-  --fixed-width: 700px;
+  --fixed-width: 500px;
 }
 ::after,
 ::before{
@@ -157,37 +157,23 @@ nav{
       margin-left: 100px;
       margin-right: 100px;      
   }
-  .btn-contact{
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
+  .content-container-btn{
+    display: flex;
+   justify-content: space-around;
   }
-  .btn-website, 
-  .btn-developer{
-      margin-top: 0.5rem;
-      background: #C43A5F;
-      color: white;
-      border-color: #C43A5F;
-      font-size: 1rem;
-      text-transform: capitalize;
-      letter-spacing: 1.5px;
-      border-radius: var(--radius);
-      padding: 1rem 4rem;
-      cursor: pointer;
-      transition: var(--transition);
-      margin-right: 2rem;
-      
+  .hero-btn {
+    background: white;
+    border: 1px solid #C43A5F;
+    /* text-transform: uppercase; */
+    padding: 0.75rem 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #C43A5F;
   }
-  .btn-website:hover{
-      background: #8D0B1A;
-      color: white;
-      border-color:#8D0B1A;
+  .hero-btn:hover {
+    background: #C43A5F;
+    color: whitesmoke;
   }
-  .btn-developer:hover{
-    background: #8D0B1A;
-    color: white;
-    border-color:#8D0B1A;
-}
 
 /* contacts webpage */
 
@@ -232,8 +218,8 @@ main{
 }
 .img-container{
     position: relative;
-    width: 260px;
-    height: 260px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
     margin: 0 auto;
     margin-bottom: 1rem;
